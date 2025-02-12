@@ -1,24 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 function App() {
+  let name = "REACT LEARNING"
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <div>
+  <h1>Welcome to {name} HOHO</h1>
+  <FontAwesomeIcon icon={faWhatsapp} size="10x" color="green" />
+   </div>
   );
 }
 
